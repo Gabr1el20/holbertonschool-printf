@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdarg.h>
-#include <stdlib.h>
 #include "main.h"
-
 /**
  * _printf - A function to print some formats
  *
