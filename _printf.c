@@ -34,14 +34,12 @@ int _printf(const char *format, ...)
 				if (sim[y].sym == format[x + 1])
 				{
 					res += sim[y].f(args);
-					y++;
 					x++;
 				}
 				if (format[x + 1] == '%')
 				{
 					_putchar(format[x]);
 					x++;
-					res++;
 				}
 				y++;
 			}
@@ -49,7 +47,6 @@ int _printf(const char *format, ...)
 		else
 		{
 			_putchar(format[x]);
-			res++;
 		}
 		x++;
 	}
