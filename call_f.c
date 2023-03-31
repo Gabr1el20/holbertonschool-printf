@@ -13,8 +13,8 @@ int call_f(va_list args, char s)
 		{'c', sym_c},
 		{'s', sym_s},
 		{'%', percent},
-		{'d', NULL},
-		{'i', NULL},
+		{'d', printdec},
+		{'i', printdec},
 		{'\0', NULL}
 	};
 	int i;

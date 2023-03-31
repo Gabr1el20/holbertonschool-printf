@@ -22,5 +22,6 @@ int sym_s(va_list args);
 char _putchar(char c);
 int call_f(va_list args, char s);
 int percent(va_list args);
+int printdec(va_list args);
 
 #endif
