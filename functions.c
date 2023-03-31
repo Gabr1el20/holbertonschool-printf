@@ -50,3 +50,47 @@ int percent(__attribute__((unused))va_list args)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * printdec - A function to print 'd' and 'i'
+ * @args: Variadic arguments
+ *
+ * Return: Resultado, variable that stores the values
+ */
+
+int printdec(va_list args)
+{
+	long int n = va_arg(args, int);
+	char arreglo[20];
+	long int i = 0, resultado = 0;
+
+	if (n == 0)
+	{
+		_putchar('0');
+		resultado++;
+	}
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n *= -1;
+		resultado++;
+	}
+
+	while (n > 0)
+	{
+		arreglo[i] = n % 10 + '0';
+		n /= 10;
+		i++;
+	}
+
+	i--;
+
+	while (i >= 0)
+	{
+		_putchar(arreglo[i]);
+		i--;
+		resultado++;
+	}
+	return (resultado);
+}
