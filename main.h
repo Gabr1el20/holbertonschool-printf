@@ -20,5 +20,6 @@ typedef struct sym
 int sym_c(va_list args);
 int sym_s(va_list args);
 char _putchar(char c);
+int call_f(va_list args, char s);
 
 #endif

@@ -8,43 +8,29 @@
  */
 int _printf(const char *format, ...)
 {
+	int x, res = 0;
 	va_list args;
-	int x = 0, y = 0, res = 1;
-	syms sim[] = {
-		{'c', sym_c},
-		{'s', sym_s},
-		{'d', NULL},
-		{'i', NULL},
-		{'\0', NULL}
-	};
 
 	va_start(args, format);
+
 	if (format == NULL)
 		return (-1);
-	while (format[x] != '\0')
+
+	for (x = 0; format[x]; x++)
 	{
 		if (format[x] == '%')
 		{
-			while (sim[y].f != NULL)
-			{
-				if (sim[y].sym == format[x + 1])
-				{
-					res += sim[y].f(args);
-					x++;
-				}
-				if (format[x + 1] == '%')
-				{
-					_putchar(format[x]);
-					x++;
-				}
-				y++;
-			}
+			if (!format[x + 1])
+				return (-1);
+
+			res += call_f(args, format[x + 1]);
+			x++;
 		}
 		else
 		{
 			_putchar(format[x]);
+			res++;
 		}
-		x++;
 	}
 	va_end(args);
 	return (res);
