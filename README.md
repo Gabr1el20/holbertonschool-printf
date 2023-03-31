@@ -17,7 +17,7 @@
 * [Getting Started](#getting-started)
 * [Prerequisites](#prerequisites)
 * [Usage](#usage)
-* [Roadmap](#roadmap)
+* [Flowchart](#flowchart)
 * [License](#license)
 * [Authors](#authors)
 
@@ -34,6 +34,7 @@ This section should list any major frameworks that you built your project using.
 * [UBUNTU]()
 * [GitHub](https://github.com/)
 * [VI]()
+* [C]()
 
 ## Getting Started
 
@@ -41,15 +42,17 @@ We were charged to deal with several format specifiers, with many more on the ta
 
 ### Prerequisites
 
-*Allowed editors: vi, vim, emacs
-*All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-*All your files should end with a new line A README.md file, at the root of the folder of the project is mandatory
-*Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl 
-*You are not allowed to use global variables
-*No more than 5 functions per file In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account).
-*We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-*The prototypes of all your functions should be included in your header file called main.h Don’t forget to push your header file
-*All your header files should be include guarded Note that we will not provide the _putchar function for this project.
+- Allowed editors: `vi, vim, emacs`
+- All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+- All your files should end with a new line.
+- A `README.md` file, at the root of the folder of the project is mandatory
+- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl 
+- You are not allowed to use global variables
+- No more than 5 functions per file In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account).
+- We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
+- The prototypes of all your functions should be included in your header file called `main.h` Don’t forget to push your header file
+- All your header files should be include guarded.
+- Note that we will not provide the `_putchar` function for this project.
 
 ## Usage
 
@@ -59,13 +62,18 @@ char c = 'a';
 
 char b = 'd';
 
-_printf("My first string %c, my second string %c"), c, b);
+char *str = "Holberton"
+
+_printf("My first char %c, my second char %c"), c, b);
+_putchar('\n');
+_printf("The string is: %s", str);
 
 OUTPUT : My first char a, my second char d
+         The string is: Holberton.
 
-## Roadmap
+## Flowchart
 
-See the [open issues](https://github.com/NicoV00/holbertonschool-printf/issues) for a list of proposed features (and known issues).
+![Flowchart of the _printf function](https://raw.githubusercontent.com/Gabr1el20/holbertonschool-printf/master/Printf%20diagram.drawio.png)
 
 
 
