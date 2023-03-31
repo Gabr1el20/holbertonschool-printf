@@ -74,7 +74,7 @@ OUTPUT :
 
 ## Flowchart
 
-![Flowchart of the _printf function](https://raw.githubusercontent.com/Gabr1el20/holbertonschool-printf/master/Printf%20diagram.drawio.png)
+![Flowchart of the _printf function](https://raw.githubusercontent.com/Gabr1el20/holbertonschool-printf/master/printfv2.png)
 
 
 
