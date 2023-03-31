@@ -39,6 +39,12 @@ int sym_c(va_list args)
 	return (1);
 }
 
+/**
+ * percent - Function to print percent
+ * @args: Variadic args.
+ *
+ * Return: 1
+ */
 int percent(__attribute__((unused))va_list args)
 {
 	_putchar('%');
