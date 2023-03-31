@@ -68,8 +68,9 @@ _printf("My first char %c, my second char %c"), c, b);
 _putchar('\n');
 _printf("The string is: %s", str);
 
-OUTPUT : My first char a, my second char d
-         The string is: Holberton.
+OUTPUT :
+- My first char a, my second char d
+- The string is: Holberton.
 
 ## Flowchart
 
