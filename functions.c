@@ -16,6 +16,9 @@ int sym_s(va_list args)
 
 
 	s = va_arg(args, char *);
+
+	if (!s)
+		s = "(null)";
 	while (s[x] != '\0')
 	{
 		_putchar(s[x]);
@@ -33,5 +36,11 @@ int sym_c(va_list args)
 {
 	_putchar(va_arg(args, int));
 
+	return (1);
+}
+
+int percent(__attribute__((unused))va_list args)
+{
+	_putchar('%');
 	return (1);
 }

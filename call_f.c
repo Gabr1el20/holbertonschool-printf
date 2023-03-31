@@ -12,6 +12,7 @@ int call_f(va_list args, char s)
 	syms sim[] = {
 		{'c', sym_c},
 		{'s', sym_s},
+		{'%', percent},
 		{'d', NULL},
 		{'i', NULL},
 		{'\0', NULL}
