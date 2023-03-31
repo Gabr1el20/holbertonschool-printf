@@ -1,0 +1,42 @@
+.TH man _3_printf
+
+_printf
+
+.SH SYNOPSIS
+#include "main.h"
+
+int _printf(const char *format, ...)
+
+.SH DESCRIPTION
+_printf is a replica of the function 'printf' of the library <stdio.h>.
+This function takes some convertions specifiers from format and prints them to te standard output.
+Also returns the numbers of characters printed(excluding the null bytes at the end of strings).
+.PP
+
+.br
+
+.SH FILES
+The files requiered to compile this program are:
+call-f.c, functions.c, _putchar.c and main.h
+
+.SH Convertions specifiers
+The format string can be changed depending on the specifier
+Those are: 'c', 's', '%', 'i', and 'd'.
+
+.br c
+The argument is converted to a char, and the resulting character is written.
+
+.br s
+The argument is converted to a string, and printed excluding the NULL byte.
+
+.br %
+This is an special case, it prints only the '%'. to achieve this you need to type '%%'
+
+.br d
+The argument is converted to a signed decimal notation
+
+.SH RETURN VALUE
+When returned correctly, the number of characters printed is the return, otherwise -1 is returned.
+
+.SH AUTHORS
+Gabriel Delgado % Nicolás Valles
