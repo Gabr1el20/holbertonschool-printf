@@ -38,8 +38,6 @@ You can use them to test your functions, but you don’t have to push them to yo
 
 ## Content of the repository
 
-We were charged to deal with several format specifiers, with many more on the table as optional advanced tasks.
-
 The main files of this repository are the next ones:
 - `main.h`: Header file 
 - `_printf.c`: Contains the `_printf` function
