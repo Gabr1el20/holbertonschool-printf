@@ -55,20 +55,27 @@ To use the core function _printf, you can call it like the original printf, see 
 ```
 #include "main.h"
 
-void main(void)
+int main(void)
 {
 char c = 'a';
 char b = 'd';
-char *str = "Holberton"
+int x = 120;
+int y = 720;
+char *str = "Holberton";
 
-  _printf("My first char is %c, and my second char is %b\n"), c, b);
+  _printf("My first char is %c, and my second char is %c\n", c, b);
   _printf("The string is: %s\n", str);
+  _printf("My numbers are: %d and %i\n", x, y);
+  _printf("Percentage%%\n");
+  return 0;
   }
 ```
-OUTPUT:
+Output:
 ```
-- My first char a, my second char d
-- The string is: Holberton.
+My first char is a, and my second char is d
+The string is: Holberton
+My numbers are: 120 and 720
+Percentage%
 ```
 
 ## Convertion specifiers:
