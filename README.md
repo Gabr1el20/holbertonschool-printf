@@ -28,12 +28,10 @@
 This is a rebuild of the standard printf function in C, which required a function capable of printing with the %i, %d, %c, %s, and %% specifiers to standard output. printf returns the number of characters printed (excluding the null byte at the end of strings). We were not asked to handle flag characters, field width, precision, or length.
 
 ## Built With
-
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project was created using C language.
 
 * [UBUNTU]()
 * [GitHub](https://github.com/)
-* [VI]()
 * [C]()
 
 ## Getting Started
