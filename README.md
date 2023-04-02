@@ -64,9 +64,9 @@ char b = 'd';
 
 char *str = "Holberton"
 
-_printf("My first char %c, my second char %c"), c, b);
-_putchar('\n');
-_printf("The string is: %s", str);
+- _printf("My first char %c, my second char %b"), c, b);
+- _putchar('\n');
+- _printf("The string is: %s", str);
 
 OUTPUT :
 - My first char a, my second char d
