@@ -58,9 +58,9 @@ The main files of this repository are the next ones:
 - `call_f.c`: This file contains the function in charge of compare the symbols and return their associated function.
 - `functions.c`: This one contains the definition of the conversion specifier functions.
 - `_putchar.c`: Contains a replication of the `putchar` function. 
-## Usage
+# Usage
 
-# Prototype
+### Prototype
 
 > The prototype of the function is `int _printf(const char *format, ...)`
  
