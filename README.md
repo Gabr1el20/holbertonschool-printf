@@ -9,18 +9,6 @@
 </p>
 
 
-
-# Table Of Contents
- 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-* [Prerequisites](#prerequisites)
-* [Usage](#usage)
-* [Flowchart](#flowchart)
-* [License](#license)
-* [Authors](#authors)
-
 ## About The Project
 
 > This is a replica of the standard printf function in C, which is a function capable of printing with specifiers `%i`, `%d`, `%c`, `%s`, and `%%` to standard output. printf returns the number of characters printed (excluding the null byte at the end of strings). We were not asked to handle flag characters, field width, precision, or length.
