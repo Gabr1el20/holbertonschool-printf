@@ -94,3 +94,36 @@ int printdec(va_list args)
 	}
 	return (resultado);
 }
+
+/**
+ * printbin - A function to print binary
+ * @args: variadic argument
+ *
+ * Return: digits printed.
+ */
+int printbin(va_list args)
+{
+	long int num = va_arg(args, int);
+	char bin[32];
+	long int x = 0, y, result = 0;
+
+	if (num == 0)
+	{
+		_putchar('0');
+		result++;
+	}
+
+	while (num > 0)
+	{
+		bin[x] = num % 2;
+		num /= 2;
+		x++;
+	}
+
+	for (y = x - 1; y >= 0; y--)
+	{
+		_putchar(bin[y] + '0');
+		result++;
+	}
+	return (result);
+}

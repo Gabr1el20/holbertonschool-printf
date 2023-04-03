@@ -15,6 +15,7 @@ int call_f(va_list args, char s)
 		{'%', percent},
 		{'d', printdec},
 		{'i', printdec},
+		{'b', printbin},
 		{'\0', NULL}
 	};
 	int i;
